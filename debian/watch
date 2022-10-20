@@ -1,0 +1,3 @@
+version=3
+https://github.com/mojohaus/xml-maven-plugin/tags \
+.*/archive/xml-maven-plugin-(\d\S*)\.tar\.gz debian jh_repack

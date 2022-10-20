@@ -1,0 +1,37 @@
+Source: xml-maven-plugin
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders: Eugene Zhukov <eugene@debian.org>
+Build-Depends:
+ debhelper (>= 11),
+ default-jdk,
+ junit4,
+ libmaven-plugin-testing-java,
+ libmaven-plugin-tools-java,
+ libmaven3-core-java,
+ libplexus-io-java,
+ libplexus-resources-java (>= 1.1.0-1~),
+ libplexus-utils-java,
+ libsaxonhe-java,
+ libxalan2-java,
+ libxerces2-java,
+ libxml-commons-resolver1.1-java (>= 1.2),
+ maven-debian-helper (>= 1.5)
+Standards-Version: 4.1.4
+Vcs-Git: https://salsa.debian.org/java-team/xml-maven-plugin.git
+Vcs-Browser: https://salsa.debian.org/java-team/xml-maven-plugin
+Homepage: https://github.com/mojohaus/xml-maven-plugin/
+
+Package: libxml-maven-plugin-java
+Architecture: all
+Depends: ${maven:Depends}, ${misc:Depends}
+Recommends: ${maven:OptionalDepends}
+Description: Maven XML Plugin
+ A plugin for various XML related tasks like validation, transformation,
+ and the like.
+ The plugin offers the following goals:
+  * xml:validate validates XML files against a schema.
+    If the files aren't matching a certain schema, one may simply check,
+    whether they are well formed.
+  * xml:transform transforms XML files by applying XSLT stylesheets.

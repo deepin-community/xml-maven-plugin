@@ -1,0 +1,4 @@
+
+junit junit * s/.*/4.x/ * *
+net.sf.saxon s/saxon/Saxon-HE jar s/.*/debian * *
+org.apache.maven maven-* * s/.*/3.x/ * *

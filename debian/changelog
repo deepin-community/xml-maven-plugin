@@ -1,0 +1,60 @@
+xml-maven-plugin (1.0.1-4) unstable; urgency=medium
+
+  * Team upload.
+  * Removed the dependency on libjaxp1.3-java
+  * Removed the unused build dependency on maven-invoker-plugin
+  * Removed the Maven rule for plexus-resources
+  * Standards-Version updated to 4.1.4
+  * Switch to debhelper level 11
+  * Use salsa.debian.org Vcs-* URLs
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Tue, 08 May 2018 22:05:22 +0200
+
+xml-maven-plugin (1.0.1-3) unstable; urgency=medium
+
+  * Team upload.
+  * Depend on libmaven3-core-java instead of libmaven2-core-java
+  * Moved the package to Git
+  * Standards-Version updated to 4.0.0
+  * Switch to debhelper level 10
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Mon, 31 Jul 2017 17:40:32 +0200
+
+xml-maven-plugin (1.0.1-2) unstable; urgency=medium
+
+  * Replace dependency libsaxonb-java to libsaxonhe-java
+
+ -- Eugene Zhukov <eugene@debian.org>  Tue, 16 Feb 2016 21:29:12 +0200
+
+xml-maven-plugin (1.0.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * d/copyright: fixed obsolete URL
+  * Refreshed test_exclude.patch
+
+ -- Eugene Zhukov <eugene@debian.org>  Mon, 01 Feb 2016 07:52:56 +0000
+
+xml-maven-plugin (1.0-3) unstable; urgency=medium
+
+  * Bump Standards-Version to 3.9.6 (no changes)
+  * Dropped d/orig-tar.sh
+  * Fixed d/watch to point to github
+  * d/control: fix homepage, vcs-url's
+  * debhelper updated to version 9
+  * Switched from cdbs build system to debhelper
+  * Fixed lintian warning maven-plugin-in-usr-share-java
+
+ -- Eugene Zhukov <jevgeni.zh@gmail.com>  Tue, 11 Aug 2015 13:32:57 +0000
+
+xml-maven-plugin (1.0-2) unstable; urgency=medium
+
+  * Bump Standards-Version to 3.9.5
+  * Dropped one patch
+
+ -- Eugene Zhukov <jevgeni.zh@gmail.com>  Tue, 17 Dec 2013 17:54:29 +0000
+
+xml-maven-plugin (1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #717626)
+
+ -- Eugene Zhukov <jevgeni.zh@gmail.com>  Thu, 02 May 2013 11:34:01 +0000

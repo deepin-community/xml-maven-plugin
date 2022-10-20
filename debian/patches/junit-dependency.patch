@@ -1,0 +1,18 @@
+Description: Adds the missing junit dependency
+Author: Emmanuel Bourg <ebourg@apache.org>
+Forwarded: not-needed
+--- a/pom.xml
++++ b/pom.xml
+@@ -139,6 +139,12 @@
+       <version>2.6.1</version>
+     </dependency>
+     <dependency>
++      <groupId>junit</groupId>
++      <artifactId>junit</artifactId>
++      <version>4.12</version>
++      <scope>test</scope>
++    </dependency>
++    <dependency>
+       <groupId>org.apache.maven.plugin-testing</groupId>
+       <artifactId>maven-plugin-testing-harness</artifactId>
+       <version>2.1</version>

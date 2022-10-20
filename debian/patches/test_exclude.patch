@@ -1,0 +1,23 @@
+Description: one test excluded
+   * it fails because Saxon library is newer
+
+--- a/src/test/java/org/codehaus/mojo/xml/test/TransformMojoTest.java
++++ b/src/test/java/org/codehaus/mojo/xml/test/TransformMojoTest.java
+@@ -190,7 +190,7 @@ public class TransformMojoTest
+ 
+     /**
+      * Builds the it7 test project.
+-     */
++     
+     public void testIt8()
+         throws Exception
+     {
+@@ -207,7 +207,7 @@ public class TransformMojoTest
+         assertEquals( "http://www.saxonica.com/", eval( doc1, "/root/vendor-url" ) );
+         assertEquals( "2.0", eval( doc1, "/root/version" ) );
+     }
+-
++    */
+     /**
+      * Builds the it10 test project.
+      */
